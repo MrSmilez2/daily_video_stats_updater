@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for content in object_list %}
+    <li>{{content.video_url.channel_name}}</li>
+    <li>{{content.video_url.video_name}}</li>
+    <li>{{content.date_of_update}}</li>
+    <li>Views: {{content.video_views}}</li>
+    <li>{{content.video_comments}}</li>
+    <li>{{content.video_likes}}</li>
+    <li>{{content.video_dislikes}}</li>
+{% endfor %}
+</body>
+</html>
